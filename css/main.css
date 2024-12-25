@@ -23,7 +23,7 @@ h2 {
   font-size: 2rem;
 }
 
-.main-container {
+.wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,19 +33,19 @@ h2 {
 }
 
 @media (min-width: 600px) {
-  .main-container {
+  .wrapper {
     width: 60%;
   }
 }
 
-.card-container {
+main {
   display: flex;
   flex-direction: column;
   width: 80%;
 }
 
 @media (min-width: 600px) {
-  .card-container {
+  main {
     flex-direction: row;
   }
 }
@@ -139,10 +139,10 @@ p {
   border: 2px solid var(--very-light-gray);
 }
 
-.attribution {
+footer {
   font-size: 11px;
   text-align: center;
 }
-.attribution a {
+footer a {
   color: hsl(228, 45%, 44%);
 }
