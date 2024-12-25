@@ -1,0 +1,148 @@
+html {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --very-light-gray: hsl(0, 0%, 95%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+}
+
+body {
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 600px) {
+  body {
+    height: 100vh;
+  }
+}
+
+h2 {
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2rem;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 32px auto;
+  gap: 8px;
+  width: 90%;
+}
+
+@media (min-width: 600px) {
+  .main-container {
+    width: 60%;
+  }
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+@media (min-width: 600px) {
+  .card-container {
+    flex-direction: row;
+  }
+}
+
+.card {
+  padding: 32px;
+  color: white;
+}
+
+.card a {
+  text-decoration: none;
+  border-radius: 32px;
+  padding: 12px;
+  color: white;
+  background-color: var(--very-light-gray);
+  margin-top: 16px;
+  width: 100px;
+  display: block;
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  .card a {
+    margin-top: 64px;
+  }
+}
+
+p {
+  line-height: 1.6;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  color: var(--transparent-white);
+}
+
+.sedan {
+  background-color: var(--bright-orange);
+  border-radius: 8px 8px 0 0;
+}
+
+@media (min-width: 600px) {
+  .sedan {
+    border-radius: 8px 0 0 8px;
+  }
+}
+
+.sedan a {
+  color: var(--bright-orange);
+  border: 2px solid var(--bright-orange);
+}
+
+.sedan a:active {
+  background-color: var(--bright-orange);
+  color: var(--very-light-gray);
+  border: 2px solid var(--very-light-gray);
+}
+
+.suv {
+  background-color: var(--dark-cyan);
+}
+
+.suv a {
+  color: var(--dark-cyan);
+  border: 2px solid var(--dark-cyan);
+}
+
+.suv a:active {
+  background-color: var(--dark-cyan);
+  color: var(--very-light-gray);
+  border: 2px solid var(--very-light-gray);
+}
+
+.luxury {
+  background-color: var(--very-dark-cyan);
+  border-radius: 0 0 8px 8px;
+}
+
+@media (min-width: 600px) {
+  .luxury {
+    border-radius: 0 8px 8px 0px;
+  }
+}
+
+.luxury a {
+  color: var(--very-dark-cyan);
+  border: 2px solid var(--very-dark-cyan);
+}
+
+.luxury a:active {
+  background-color: var(--very-dark-cyan);
+  color: var(--very-light-gray);
+  border: 2px solid var(--very-light-gray);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
